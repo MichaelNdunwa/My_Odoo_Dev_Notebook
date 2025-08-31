@@ -132,4 +132,4 @@ python3 ./odoo-bin -c ./odoo.conf -d dev_db_v16 -i your_module -u your_module
 * Assets fail → confirm Node ≥ 18 and `less/rtlcss`.
 
 [Previous: —]( )                                                                                                                                                     
-[Next: 02 Create & manage PostgreSQL databases for Odoo dev »](02-create-manage-postgres-odoo.md)
+[Next: Create & manage PostgreSQL databases for Odoo dev »](02-create-manage-postgres-odoo.md)
