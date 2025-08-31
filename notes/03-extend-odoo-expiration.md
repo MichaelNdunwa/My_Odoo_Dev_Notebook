@@ -25,10 +25,9 @@ INSERT INTO ir_config_parameter (key,value)
 VALUES ('database.expiration_reminder_last_date','2026-01-01')
 ON CONFLICT (key) DO UPDATE SET value=EXCLUDED.value;
 ```
-
 Restart Odoo.
 
-Dev-only override via Odoo shell
+## Dev-only override via Odoo shell
 ```
 ./odoo-bin shell -c ./odoo.conf -d your_db_name
 
@@ -39,7 +38,7 @@ params.set_param('database.expiration_reason', '')
 params.set_param('database.enterprise_code', '')
 ```
 
-Switch to Community (avoid expiry)
+## Switch to Community (avoid expiry)
 - Remove Enterprise addons from `addons_path`.
 - Update app list; uninstall Enterprise-only modules.
 - Ensure no menu/action references Enterprise models.
@@ -49,5 +48,6 @@ Switch to Community (avoid expiry)
 [Previous: Create & manage PostgreSQL databases for Odoo dev](./02-create-manage-postgres-odoo.md)
 
 [Next: Restore live DB on local (Odoo 16 on Debian/WSL) »](./04-restore-live-db-local.md)
+
 
 
