@@ -7,7 +7,7 @@ This notebook documents practical steps, fixes, and reminders I discover while d
 
 ---
 
-<img width="1024" height="840" alt="5e5a9dfe-fcbf-4917-98d0-1e82657b3995" src="https://github.com/user-attachments/assets/86d1c7ae-97e7-4432-856f-a7138f1d1192" />
+  <img width="512" height="512" alt="unnamed" src="https://github.com/user-attachments/assets/1d989073-7daa-4d0d-a75a-debc6335ae18" />
 
 ---
 
