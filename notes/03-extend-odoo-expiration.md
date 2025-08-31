@@ -46,6 +46,7 @@ Switch to Community (avoid expiry)
 
 >⚠️ Legal: Dev override is for local testing only. Use a valid subscription for production.
 
-[Previous: Create & manage PostgreSQL databases for Odoo dev](03-extend-odoo-expiration.md)
+[Previous: Create & manage PostgreSQL databases for Odoo dev](02-create-manage-postgres-odoo.md)
 
 [Next: Restore live DB on local (Odoo 16 on Debian/WSL) »](04-restore-live-db-local.md)
+
