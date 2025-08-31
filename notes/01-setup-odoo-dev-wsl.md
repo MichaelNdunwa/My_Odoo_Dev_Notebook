@@ -86,7 +86,7 @@ addons_path = %(here)s/addons
 data_dir = ~/.local/share/Odoo
 log_level = info
 ```
-9) ▶️ First run (install base)
+## 9) ▶️ First run (install base)
 Inside Debian:
 ```
 source venv/bin/activate
@@ -132,4 +132,4 @@ python3 ./odoo-bin -c ./odoo.conf -d dev_db_v16 -i your_module -u your_module
 * Assets fail → confirm Node ≥ 18 and `less/rtlcss`.
 
 [Previous: —]( )                                                                                                                                                     
-[Next: 02 Create & manage PostgreSQL databases for Odoo dev »](../02-create-manage-postgres-odoo.md)
+[Next: 02 Create & manage PostgreSQL databases for Odoo dev »](02-create-manage-postgres-odoo.md)
