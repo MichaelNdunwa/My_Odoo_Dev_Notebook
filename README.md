@@ -13,13 +13,14 @@ This notebook documents practical steps, fixes, and reminders I discover while d
 
 ## Table of Contents
 
-1. [Setting up the Odoo dev environment on WSL (Debian) — Odoo 16/17/18](notes/01-setup-odoo-dev-wsl.md)
-2. [Create & manage PostgreSQL databases for Odoo dev](notes/02-create-manage-postgres-odoo.md)
-3. [Resolve “This database has expired” (extend Odoo expiration date)](notes/03-extend-odoo-expiration.md)
-4. [Restore live DB on local (Odoo 16 on Debian/WSL)](notes/04-restore-live-db-local.md)
-5. [Test-server quick map (paths, logs, commands)](notes/05-test-server-map.md)
-6. [Sample `odoo.conf` templates for development](notes/06-sample-odoo-conf.md)
-7. [PostgreSQL socket mode in Odoo (db_host=False): what & how](notes/07-odoo-socket-mode.md)
+1. [🐧Setting up the Odoo dev environment on WSL (Debian) — Odoo 16/17/18](notes/01-setup-odoo-dev-wsl.md)
+2. [🗄️Create & manage PostgreSQL databases for Odoo dev](notes/02-create-manage-postgres-odoo.md)
+3. [⏳Resolve “This database has expired” (extend Odoo expiration date)](notes/03-extend-odoo-expiration.md)
+4. [💾Restore live DB on local (Odoo 16 on Debian/WSL)](notes/04-restore-live-db-local.md)
+5. [🧭Test-server quick map (paths, logs, commands)](notes/05-test-server-map.md)
+6. [🧾Sample `odoo.conf` templates for development](notes/06-sample-odoo-conf.md)
+7. [🔌PostgreSQL socket mode in Odoo (db_host=False): what & how](notes/07-odoo-socket-mode.md)
+8. [🐍 Multi-Python Setup on WSL (Debian) for Odoo 16/17/18](notes/08-multi-python-setup.md)
 
 
 ---
