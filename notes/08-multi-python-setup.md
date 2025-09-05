@@ -1,3 +1,4 @@
+[← Back to Table of Contents](../README.md#table-of-contents)
 
 
 # 🐍 Multi-Python Setup on WSL (Debian) for Odoo 16/17/18
@@ -195,3 +196,11 @@ o16   # jumps into Odoo 16 venv
 ---
 
 That’s it! With **pyenv + one venv per Odoo version**, you can switch projects without fighting Python versions.
+
+
+---
+
+
+[Previous: PostgreSQL Socket Mode in Odoo (db_host = False)](./07-odoo-socket-mode.md)
+
+[Next: -]()
