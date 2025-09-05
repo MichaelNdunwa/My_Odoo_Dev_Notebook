@@ -99,6 +99,11 @@ source venv/bin/activate
 pip3 install -U pip wheel setuptools
 pip3 install -r requirements.txt
 ```
+>💡If you encounter version incompatibility error, edit the requirements.txt,
+  comment out that and try again.
+
+---
+
 ## 7) 🧱 Databases per version
 Inside Debian:
 ```
