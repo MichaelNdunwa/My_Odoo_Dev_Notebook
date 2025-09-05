@@ -100,7 +100,7 @@ pip3 install -U pip wheel setuptools
 pip3 install -r requirements.txt
 ```
 >💡If you encounter version incompatibility error, edit the requirements.txt,
-  comment out that and try again.
+  comment out that line and try again.
 
 ---
 
