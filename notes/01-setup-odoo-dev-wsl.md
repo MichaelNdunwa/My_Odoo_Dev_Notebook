@@ -96,8 +96,8 @@ Inside Debian:
 cd ~/odoo_dev/odoo_16
 python3 -m venv venv
 source venv/bin/activate
-pip install -U pip wheel setuptools
-pip install -r requirements.txt
+pip3 install -U pip wheel setuptools
+pip3 install -r requirements.txt
 ```
 ## 7) 🧱 Databases per version
 Inside Debian:
