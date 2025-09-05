@@ -91,6 +91,9 @@ git clone https://www.github.com/odoo/odoo --depth 1 --branch 18.0 --single-bran
 
 ```
 ## 6) 🐍 Python venv + requirements (repeat per version)
+>I recommend you checkout [`Multi-Python Setup on WSL (Debian) for Odoo 16/17/18`](https://github.com/MichaelNdunwa/My_Odoo_Dev_Notebook/blob/main/notes/08-multi-python-setup.md),
+so that you won't run into incompactible python version.
+
 Inside Debian:
 ```
 cd ~/odoo_dev/odoo_16
