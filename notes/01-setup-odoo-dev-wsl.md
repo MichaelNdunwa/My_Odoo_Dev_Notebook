@@ -41,25 +41,59 @@ Inside Debian:
 sudo apt install -y nodejs npm
 sudo npm install -g less less-plugin-clean-css rtlcss
 ```
+
 ## 4) 📄 HTML→PDF (wkhtmltopdf)
-Inside Debian:
-```
+
+Odoo uses `wkhtmltopdf` to render HTML into PDF reports.
+The recommended version is **0.12.5**, since it properly supports headers and footers.
+
+---
+
+### Option A — Quick install (may cause rendering issues)
+
+```bash
 sudo apt install -y wkhtmltopdf
 ```
->If reports render badly, consider a patched build or Chromium-based print.
+
+---
+
+### Option B — Manual install (recommended, version 0.12.5)
+
+```bash
+cd /tmp/
+sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.focal_amd64.deb
+sudo apt install -y gdebi-core
+sudo gdebi --n wkhtmltox_0.12.5-1.focal_amd64.deb
+sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin
+sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
+```
+
+---
+
+### ✅ Test wkhtmltopdf works
+
+```bash
+wkhtmltopdf https://www.odoo.com /tmp/test.pdf
+xdg-open /tmp/test.pdf   # opens the PDF in your viewer
+```
+
+>💡 If the PDF opens with the Odoo homepage fully rendered, wkhtmltopdf is installed correctly.
+If reports still render badly in Odoo, consider a Chromium-based print fallback.
+
 
 ## 5) 🗂️ Workspaces per version
 Inside Debian:
 ```
 mkdir -p ~/odoo_dev && cd ~/odoo_dev
-git clone -b 16.0 https://github.com/odoo/odoo odoo-16
-git clone -b 17.0 https://github.com/odoo/odoo odoo-17
-git clone -b 18.0 https://github.com/odoo/odoo odoo-18
+git clone https://www.github.com/odoo/odoo --depth 1 --branch 16.0 --single-branch odoo_16
+git clone https://www.github.com/odoo/odoo --depth 1 --branch 17.0 --single-branch odoo_17
+git clone https://www.github.com/odoo/odoo --depth 1 --branch 18.0 --single-branch odoo_18
+
 ```
 ## 6) 🐍 Python venv + requirements (repeat per version)
 Inside Debian:
 ```
-cd ~/odoo_dev/odoo-16
+cd ~/odoo_dev/odoo_16
 python3 -m venv venv
 source venv/bin/activate
 pip install -U pip wheel setuptools
