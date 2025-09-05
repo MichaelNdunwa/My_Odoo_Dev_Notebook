@@ -132,4 +132,10 @@ python3 ./odoo-bin -c ./odoo.conf -d your_db_name
 
 [Previous: Sample `odoo.conf` templates for development](./05-test-server-map.md)
 
-[Next: —]()
+[Next: Multi-Python Setup on WSL (Debian) for Odoo 16/17/18](./08-multi-python-setup.md)
+
+
+
+
+
+
