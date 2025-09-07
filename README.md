@@ -21,6 +21,7 @@ This notebook documents practical steps, fixes, and reminders I discover while d
 6. [🧾Sample `odoo.conf` templates for development](notes/06-sample-odoo-conf.md)
 7. [🔌PostgreSQL socket mode in Odoo (db_host=False): what & how](notes/07-odoo-socket-mode.md)
 8. [🐍 Multi-Python Setup on WSL (Debian) for Odoo 16/17/18](notes/08-multi-python-setup.md)
+9. [🐘 Installing pgAdmin 4 on WSL/Debian](notes/09-pgadmin4-install.md)
 
 
 ---
