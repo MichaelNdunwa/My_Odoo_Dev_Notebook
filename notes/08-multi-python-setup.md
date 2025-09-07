@@ -203,4 +203,4 @@ That’s it! With **pyenv + one venv per Odoo version**, you can switch projects
 
 [Previous: PostgreSQL Socket Mode in Odoo (db_host = False)](./07-odoo-socket-mode.md)
 
-[Next: -]()
+[Next: 🐘 Installing pgAdmin 4 on WSL/Debian](./09-pgadmin4-install.md)
