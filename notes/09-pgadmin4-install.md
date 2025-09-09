@@ -109,4 +109,4 @@ Open your browser (Windows or WSL2) and go to:
 
 [Previous: 🐍 Multi-Python Setup on WSL (Debian) for Odoo 16/17/18](./08-multi-python-setup.md)
 
-[Next: -]()
+[Next: 💬 Odoo commit message style](./10-odoo-commit-style.md)
