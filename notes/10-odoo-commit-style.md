@@ -202,19 +202,3 @@ The short description is:
 
 ---
 
-✅ **Quick template for your commits**
-
-```
-[TAG] <module>: <action verb + short description>
-```
-
-Example for your own marketplace app module in Odoo:
-
-```
-[ADD] marketplace: add buyer protection hold for 7 days
-[IMP] marketplace: improve dispatcher KYC validation
-[FIX] marketplace: prevent duplicate jobber listings
-```
-
----
-
