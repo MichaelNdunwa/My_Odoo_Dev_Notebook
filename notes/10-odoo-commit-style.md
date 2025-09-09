@@ -1,4 +1,6 @@
+[← Back to Table of Contents](../README.md#table-of-contents)
 
+# 💬 Odoo commit message style
 
 ## 🔹 General Structure
 
@@ -202,3 +204,8 @@ The short description is:
 
 ---
 
+
+
+[Previous: 🐘 Installing pgAdmin 4 on WSL/Debian](./09-pgadmin4-install.md)
+
+[Next: -]()
