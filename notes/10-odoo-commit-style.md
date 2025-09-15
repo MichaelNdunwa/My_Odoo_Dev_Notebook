@@ -16,7 +16,7 @@ Sometimes the scope (`<module|scope>`) is omitted if the commit affects many mod
 
 ## 🔹 Common Tags
 
-Here are the **prefix tags** you’ll often see in Odoo commits:
+Here are the **prefix tags** you'll often see in Odoo commits:
 
 * **\[FIX]** → A bug fix.
   Example:
@@ -42,6 +42,31 @@ Here are the **prefix tags** you’ll often see in Odoo commits:
 
 * **\[REF]** → Refactor (internal code change, no feature or bug).
 
+* **\[MOV]** → Moving files or code (use git move to preserve history).
+  Example:
+
+  ```
+  [MOV] base: move user validation logic to separate file
+  ```
+
+  Meaning: moved code from one file to another while preserving Git history.
+
+* **\[REL]** → Release commits for new major or minor stable versions.
+  Example:
+
+  ```
+  [REL] Release Odoo 17.0
+  ```
+
+* **\[PERF]** → Performance improvements and optimizations.
+  Example:
+
+  ```
+  [PERF] stock: optimize picking confirmation queries
+  ```
+
+  Meaning: improved performance of database queries in stock picking.
+
 * **\[I18N]** → Internationalization / translations.
   Example:
 
@@ -58,7 +83,7 @@ Here are the **prefix tags** you’ll often see in Odoo commits:
   [CLA] Add carlos.lopez to Tecnativa
   ```
 
-  Meaning: Carlos Lopez was added under Tecnativa’s CLA record.
+  Meaning: Carlos Lopez was added under Tecnativa's CLA record.
 
 * **\[LEGAL]** → Legal-related changes (licenses, terms, etc.).
   Example:
@@ -92,8 +117,9 @@ After the tag, you often see a **scope** (module, tool, or area of the repo):
 The short description is:
 
 * Written in lowercase (except proper nouns)
-* Concise (typically under 72 chars)
+* Concise (typically under 50 chars)
 * States what the commit *does* (not why)
+* Should form a valid sentence with "if applied, this commit will..."
 
 ---
 
@@ -109,13 +135,13 @@ The short description is:
 
 ---
 
-👉🏽 So Odoo’s style is **consistent, structured, and categorized** for easy tracking. It makes browsing history or using `git log` much easier, especially across thousands of modules.
+👉🏽 So Odoo's style is **consistent, structured, and categorized** for easy tracking. It makes browsing history or using `git log` much easier, especially across thousands of modules.
 
 ---
 
 
 # 📝 Odoo Commit Message Cheat Sheet
->a **cheat sheet template** you can use to follow Odoo’s commit message style when writing commits for your own modules or when contributing upstream:
+>a **cheat sheet template** you can use to follow Odoo's commit message style when writing commits for your own modules or when contributing upstream:
 
 ### **Format**
 
@@ -132,6 +158,9 @@ The short description is:
 | `[ADD]`   | Add new feature, module, file, or functionality             |
 | `[REM]`   | Remove obsolete/unnecessary code or files                   |
 | `[REF]`   | Refactor code (internal change, no functional impact)       |
+| `[MOV]`   | Move files/code (use git move to preserve history)          |
+| `[REL]`   | Release commits for new major/minor stable versions         |
+| `[PERF]`  | Performance improvements and optimizations                   |
 | `[I18N]`  | Internationalization / translations                         |
 | `[CLA]`   | Contributor License Agreement update                        |
 | `[LEGAL]` | Legal/license-related changes                               |
@@ -150,14 +179,20 @@ The short description is:
 
 2. **Description**:
 
-   * Be concise (max \~72 chars).
+   * Be concise (max ~50 chars for header).
    * Describe what the commit *does*, not why.
-   * Use the imperative mood (e.g., “add…”, “fix…”, “prevent…”).
+   * Use the imperative mood (e.g., "add…", "fix…", "prevent…").
+   * Should form a valid sentence with "if applied, this commit will..."
 
 3. **Consistency**:
 
    * Keep lowercase in the description (except proper nouns).
-   * Don’t end with a period.
+   * Don't end with a period.
+
+4. **Full description (optional)**:
+
+   * Explain **WHY** the change was made, not what was changed.
+   * Include references: `task-123`, `Fixes #123`, `Closes #123`, `opw-123`
 
 ---
 
@@ -188,6 +223,25 @@ The short description is:
 
   ```
   [REF] stock: simplify picking confirmation logic
+  ```
+
+* Moving code:
+
+  ```
+  [MOV] base: move user validation logic to separate file
+  ```
+
+* Performance:
+
+  ```
+  [PERF] stock: optimize picking confirmation queries
+  [PERF] website: reduce page load time by caching product data
+  ```
+
+* Releases:
+
+  ```
+  [REL] Release Odoo 17.0
   ```
 
 * Internationalization:
